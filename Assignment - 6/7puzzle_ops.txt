@@ -1,0 +1,17 @@
+
+(operator
+
+ move
+ 
+ (params
+  
+  (<a> Tile) (<y> Position) (<z> Position))
+ 
+ (preconds
+  
+  (on <a> <y>) (clear <z>) (adjacent <y> <z>))
+ 
+ (effects
+
+  (on <a> <z>) (clear <y>) (del on <a> <y>) (del clear <z>)))
+

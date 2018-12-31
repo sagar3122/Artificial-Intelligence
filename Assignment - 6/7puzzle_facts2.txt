@@ -1,0 +1,47 @@
+(tile1 Tile)
+
+(tile2 Tile)
+
+(tile3 Tile)
+
+(tile4 Tile)
+
+(tile5 Tile)
+
+(tile6 Tile)
+
+(tile7 Tile)
+
+(pos1 Position)
+
+(pos2 Position)
+
+(pos3 Position)
+
+(pos4 Position)
+
+(pos5 Position)
+
+(pos6 Position)
+
+(pos7 Position)
+
+(pos8 Position)
+
+(pos9 Position)
+
+
+
+(preconds
+ 
+ (adjacent pos1 pos2) (adjacent pos1 pos4) (adjacent pos2 pos1) (adjacent pos2 pos3) (adjacent pos2 pos5) (adjacent pos3 pos2) (adjacent pos3 pos6)
+ (adjacent pos4 pos1) (adjacent pos4 pos5) (adjacent pos4 pos7) (adjacent pos5 pos2) (adjacent pos5 pos4) (adjacent pos5 pos6) (adjacent pos5 pos8) (adjacent pos6 pos3) (adjacent pos6 pos5) (adjacent pos6 pos9)
+ (adjacent pos7 pos4) (adjacent pos7 pos8) (adjacent pos8 pos5) (adjacent pos8 pos7) (adjacent pos8 pos9) (adjacent pos9 pos6) (adjacent pos9 pos8)
+ 
+ (on tile1 pos9) (on tile2 pos8) (on tile3 pos7) (on tile4 pos6) (on tile5 pos5) (on tile6 pos4) (on tile7 pos3) (clear pos1) (clear pos2))
+
+
+
+(effects
+  
+ (on tile1 pos1) (on tile2 pos2) (on tile3 pos3) (on tile4 pos4) (on tile5 pos5) (on tile6 pos6) (on tile7 pos7) (clear pos8) (clear pos9))
